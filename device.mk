@@ -107,3 +107,7 @@ PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Wifi
+PRODUCT_PACKAGES += \
+    JasmineWifiOverlay
