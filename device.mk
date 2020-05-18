@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
 #
@@ -52,10 +53,6 @@ PRODUCT_PACKAGES += \
 
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
-
-# HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # Media
 PRODUCT_COPY_FILES += \
