@@ -24,18 +24,24 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
-# Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
+# Inherit LegionOS product configuration
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# CarbonRom Maintainer
+# LegionOS Device Maintainers
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carbon.maintainer="Rcstar6696"
+    ro.maintainer.name=Immanuel_Raj
+
+#Boot Animation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+#Play bold Play wild
+LEGION_BUILD_TYPE := OFFICIAL
+
+#Gapps Architecture
+TARGET_GAPPS_ARCH := arm64
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -45,8 +51,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 TARGET_SCREEN_DENSITY := 400
 
 # Device identifier
-PRODUCT_BRAND := xiaomi
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := carbon_jasmine_sprout
+PRODUCT_NAME := legion_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
