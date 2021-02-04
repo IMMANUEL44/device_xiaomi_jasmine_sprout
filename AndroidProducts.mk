@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2021 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI A2 lineage device config
+# inherit MI A2 Pixel Experience configs
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_jasmine_sprout.mk
+    $(LOCAL_DIR)/aosp_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_jasmine_sprout-eng \
-    carbon_jasmine_sprout-userdebug \
-		carbon_jasmine_sprout-eng
+    aosp_jasmine_sprout-eng \
+    aosp_jasmine_sprout-userdebug \
+	aosp_jasmine_sprout-eng
