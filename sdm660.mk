@@ -212,10 +212,6 @@ PRODUCT_PACKAGES += \
 # Density
 TARGET_SCREEN_DENSITY := 400
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
