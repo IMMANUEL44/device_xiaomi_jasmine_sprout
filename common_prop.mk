@@ -1,5 +1,5 @@
 #Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys"
 
 # Apex
 ifeq ($(ENABLE_APEX), true)
