@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The PixelExperience Project
+# Copyright (C) 2021 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,12 +24,12 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit Pixel Experience configs
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_SUPPORTS_GOOGLE_RECORDER = true
-TARGET_INCLUDE_STOCK_ARCORE = true
-TARGET_INCLUDE_LIVE_WALLPAPERS = true
-TARGET_BOOT_ANIMATION_RES = 1080
+# Inherit ArrowOS configs
+$(call inherit-product, vendor/arrow/config/common.mk)
+IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+DEVICE_MAINTAINER := Immanuel_Raj
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -44,6 +44,6 @@ BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/relea
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_jasmine_sprout
+PRODUCT_NAME := arrow_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
-PRODUCT_MODEL := Mi A2 (AOSP)
+PRODUCT_MODEL := Mi A2

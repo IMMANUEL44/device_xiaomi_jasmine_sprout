@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI A2 Pixel Experience configs
+# inherit MI A2 ArrowOS configs
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_jasmine_sprout.mk
+    $(LOCAL_DIR)/arrow_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_jasmine_sprout-eng \
-    aosp_jasmine_sprout-userdebug \
-	aosp_jasmine_sprout-eng
+    arrow_jasmine_sprout-eng \
+    arrow_jasmine_sprout-userdebug \
+	arrow_jasmine_sprout-eng
