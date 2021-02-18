@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI A2 lineage device config
+# inherit MI A2 ArrowOS device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_jasmine_sprout.mk
+    $(LOCAL_DIR)/arrow_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_jasmine_sprout-eng \
-    carbon_jasmine_sprout-userdebug \
-		carbon_jasmine_sprout-eng
+    arrow_jasmine_sprout-eng \
+    arrow_jasmine_sprout-userdebug \
+	arrow_jasmine_sprout-eng

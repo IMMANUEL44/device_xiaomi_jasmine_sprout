@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
 #
@@ -99,7 +98,7 @@ $(call inherit-product, build/target/product/verity.mk)
 $(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
 
 # AOSP DEVICE
-PRODUCT_NAME := aosp_jasmine_sprout
+PRODUCT_NAME := arrow_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2 (AOSP)
 PRODUCT_BRAND := Xiaomi
