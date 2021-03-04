@@ -29,6 +29,9 @@ DEVICE_PATH := device/xiaomi/jasmine_sprout
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
+# Encryption
+TARGET_LEGACY_HW_DISK_ENCRYPTION:=false
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := wayne_defconfig
