@@ -38,6 +38,9 @@ TARGET_GAPPS_ARCH = arm64
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# Density
+TARGET_SCREEN_DENSITY := 360
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
